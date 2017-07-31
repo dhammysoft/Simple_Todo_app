@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+ function todo()
+ {
+  var a = document.getElementById('todoDIV') ;
+   if (a.style.display === 'none') 
+   {
+          a.style.display = 'block';  
+   }
+ else {
+a.style.display = 'none'; 
+ } 
+ 
+ }
+</script>
+<style>
+#todo
+{
+margin-top :100px;
+}
+#container
+{
+margin-top:100px;
+margin-left:500px; 
+background-color:lightgrey; 
+height:400px;
+ width:300px;
+}
+#todoDIV
+{
+margin-left:10px;
+margin-top:20px; 
+padding:10px;
+}
+</style>
+<body>
+<div id = "container">
+
+<div id ="todoDIV"><h3>My To-DO List</h3> <p>1.Get Out of Bed</p>
+<p>2.Take your bath</p>
+<p>3.Brush teeth </p>
+<p>4.Visit friends </p>
+<p>5.Email Damilola Olubodun</p>
+</div>
+ <button id ="todo" onclick="todo()"> Click me to show/hide To-do List</button>
+</div>
+</body>
+</html>
